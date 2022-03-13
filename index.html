@@ -25,8 +25,8 @@
       rel="stylesheet"
       href="./asset/js/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.css"
     />
-    <link rel="stylesheet" href="./asset/js/slick-1.1/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./asset/js/slick-1.1/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./asset/js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./asset/styles/styles.css" />
   </head>
   <body>
@@ -401,9 +401,9 @@
                   id="collapseOne"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Voluptates amet earum velit nobis aliquam laboriosam nihil
                       debitis facere voluptatibus consectetur quae quasi fuga,
@@ -430,9 +430,9 @@
                   id="collapseTwo"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Sit amet consectetur adipisicing elit. Voluptates amet
                       earum velit nobis aliquam laboriosam nihil debitis animi
@@ -460,9 +460,9 @@
                   id="collapseThree"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Voluptates amet earum velit nobis aliquam laboriosam nihil
@@ -491,9 +491,9 @@
                   id="collapseFour"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Voluptates amet earum velit nobis aliquam laboriosam nihil
@@ -521,9 +521,9 @@
                   id="collapseFive"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Sit amet consectetur adipisicing elit. Voluptates amet
                       earum velit nobis aliquam laboriosam nihil debitis animi
@@ -551,9 +551,9 @@
                   id="collapseSix"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
+                  data-bs-parent=".accordion-collapse"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body ">
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Voluptates amet earum velit nobis aliquam laboriosam nihil
@@ -685,16 +685,46 @@
             sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
-        <div class="slider__container">
-          <div class="clients__slider">
-            <div class="client__item row">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./asset/img/team3.jpg" alt="">
+        <div class="slider__container px-sm-4 pt-5">
+          <div class="clients__slider owl-carousel owl-theme">
+            <div class="client__item p-sm-2 py-sm-4 p-lg-0 py-lg-4 py-4 row d-flex justify-content-evenly flex-wrap">
+              <div class=" col-sm-4 col-xs-12 p-0 img__circle">
+                <img class="img-fluid client__img" src="./asset/img/team3.jpg" alt="">
               </div>
-              <div class="col-lg-9">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
-                <h4>Isabella Mia</h4>
-                <p>Isabella Mia</p>
+              <div class="client__content ms-2 col-sm-8 col-xs-12 text-center text-sm-start">
+                <p class="client__text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                <h5 class="fw-normal client__name mb-2">Isabella Mia</h5>
+                <p class="client__companny">Companny Name</p>
+              </div>
+            </div>
+            <div class="client__item p-sm-2 py-sm-4 p-lg-0 py-lg-4 py-4 row d-flex justify-content-evenly">
+              <div class=" col-sm-4 col-xs-12 p-0 img__circle">
+                <img class="img-fluid client__img" src="./asset/img/team4.jpg" alt="">
+              </div>
+              <div class="client__content ms-2 col-sm-8 col-xs-12 text-center text-sm-start">
+                <p class="client__text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                <h5 class="fw-normal client__name mb-2">Benjamin Lucas</h5>
+                <p class="client__companny">Companny Name</p>
+              </div>
+            </div>
+            <div class="client__item p-sm-2 py-sm-4 p-lg-0 py-lg-4 py-4 row d-flex justify-content-evenly">
+              <div class=" col-sm-4 col-xs-12 p-0 img__circle">
+                <img class="img-fluid client__img" src="./asset/img/team5.jpg" alt="">
+              </div>
+              <div class="client__content ms-2 col-sm-8 col-xs-12 text-center text-sm-start">
+                <p class="client__text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                <h5 class="fw-normal client__name mb-2">Oliver Bradley</h5>
+                <p class="client__companny">Companny Name</p>
+              </div>
+            </div>
+            <div class="client__item p-sm-2 py-sm-4 p-lg-0 py-lg-4 py-4 row d-flex justify-content-evenly">
+              <div class=" col-sm-4 col-xs-12 p-0 img__circle">
+                <img class="img-fluid client__img" src="./asset/img/team6.jpg" alt="">
+              </div>
+              <div class="client__content ms-2 col-sm-8 col-xs-12 text-center text-sm-start">
+                <p class="client__text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                <h5 class="fw-normal client__name mb-2">William James</h5>
+                <p class="client__companny">Companny Name</p>
               </div>
             </div>
           </div>
@@ -703,14 +733,14 @@
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/a7fbdf7190.js"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+      <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a7fbdf7190.js"
       crossorigin="anonymous"
     ></script>
     <script
@@ -718,11 +748,14 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Number counter -->
     <script src="./asset/js/counter.js"></script>
+    <!-- Responsive tabs -->
     <script src="./asset/js/Easy-Responsive-Tab-Accordion-Control-Plugin-For-jQuery/easy-responsive-tabs.js"></script>
     <script src="./asset/js/tabReponsive.js"></script>
-    <script src="./asset/js/slick-1.1/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./asset/js/slickCustom.js"></script>
+    <!-- Slick slider -->
+    <script src="./asset/js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./asset/js/OwlResponsive.js"></script>
 
   </body>
 </html>

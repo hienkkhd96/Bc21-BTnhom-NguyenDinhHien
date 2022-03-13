@@ -237,6 +237,72 @@ body {
 #section__project .project__item h4 {
   font-size: 30px;
 }
+#section__clients {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(247, 249, 252, 0.77),
+      rgba(247, 249, 252, 0.77)
+    ),
+    url(../img/b2.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#section__clients .img__circle {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: #f3f6f9;
+  border-radius: 50%;
+  border: 3px solid #dc4f72;
+}
+#section__clients .client__item {
+  background-color: #fff;
+  margin: 12px;
+}
+#section__clients .owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  border-radius: 0;
+  background-color: white;
+}
+#section__clients .owl-theme .owl-dots .owl-dot.active span,
+#section__clients .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #dc4f72;
+}
+#section__clients .client__content {
+  position: relative;
+}
+#section__clients .client__content::before {
+  content: "\f10d";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 38px;
+  color: #2c3038;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  left: -25px;
+}
+#section__clients .client__img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.client__content .client__text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #2c3038;
+}
+.client__content .client__name {
+  color: #dc4f72;
+  font-size: 20px;
+}
+.client__content .client__companny {
+  font-size: 13px;
+}
 @media (min-width: 1400px) {
   .container-xl,
   .container-sm,
@@ -289,5 +355,19 @@ body {
 
   .resp-vtabs .resp-tab-content:last-child {
     border-bottom: 1px solid #c1c1c1 !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #section__clients .client__text {
+    margin-top: 20px;
+  }
+  #section__clients .client__content::before {
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #section__clients .client__content::before {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
