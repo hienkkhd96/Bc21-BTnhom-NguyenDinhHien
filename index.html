@@ -21,44 +21,46 @@
 
 <body>
   <div id="header" class="fixed-top">
-    <div class="container-lg h-100">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white h-100">
-        <div class="container-fluid align-items-center">
-          <div>
+    <div class="h-100">
+      <nav class="navbar navbar-expand-lg navbar-light h-100">
+        <div class="container-xl">
+          <div class="ps-4">
             <a class="navbar-brand" href="#"><span class="fa fa-handshake-o"></span>Masterwork</a>
           </div>
-          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-            <div class="navbar-nav align-items-center">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Services</a>
+          <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa icon-expand fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <div class="navbar-nav align-items-center bg-white">
+              <a class="nav-link py-lg-0 active" aria-current="page" href="#">Home</a>
+              <a class="nav-link py-lg-0" href="#">About</a>
+              <a class="nav-link py-lg-0" href="#">Services</a>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link py-lg-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Pages
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                <ul class="dropdown-menu position-relative mt-2" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item position-relative" href="#">Action</a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <a class="dropdown-item position-relative" href="#">Blog single</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item position-relative" href="#">Landing page</a>
                   </li>
                 </ul>
               </li>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link py-lg-0" href="#">Contact</a>
+              <span class="nav-link py-lg-0" href="#"> 
+                <span class="nav-link py-lg-0 ml-lg-3 ml-0 mt-lg-0 mt-3" href="#">
+                <button class="btn btn-outline-danger theme-button custom-btn">
+                  Schedule a Demo
+                </button>
+                </span>
+              </span>
             </div>
-          </div>
-          <div>
-            <span class="nav-link ml-lg-3 ml-0 mt-lg-0 mt-3" href="#">
-              <button class="btn btn-outline-danger theme-button custom-btn">
-                Schedule a Demo
-              </button>
-            </span>
           </div>
         </div>
       </nav>
@@ -97,7 +99,7 @@
       </div>
       <div class="tools__list row">
         <div class="tool__item d-flex justify-content-center align-center flex-wrap flex-row col-lg-4 col-md-6 mt-5">
-          <div class="item-block d-flex align-items-center flex-column">
+          <div class="item-block up__Y d-flex align-items-center flex-column">
             <div>
               <img src="./asset/img/s1.png" alt="" />
             </div>
@@ -109,7 +111,7 @@
           </div>
         </div>
         <div class="tool__item d-flex justify-content-center align-center flex-wrap flex-row col-lg-4 col-md-6 mt-5">
-          <div class="item-block d-flex align-items-center flex-column">
+          <div class="item-block up__Y d-flex align-items-center flex-column">
             <div>
               <img src="./asset/img/s2.png" alt="" />
             </div>
@@ -121,7 +123,7 @@
           </div>
         </div>
         <div class="tool__item d-flex justify-content-center align-center flex-wrap flex-row col-lg-4 col-md-12 mt-5">
-          <div class="item-block w-100 d-flex px-3 align-items-center flex-column">
+          <div class="item-block up__Y w-100 d-flex px-3 align-items-center flex-column">
             <div>
               <img src="./asset/img/s3.png" alt="" />
             </div>
@@ -163,43 +165,43 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="counter" class="container-xl py-4">
-    <div class="counter__list row g-4">
-      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-        <div class="counter-block p-4">
-          <h5 class="fs-6">Happy Customers</h5>
-          <h1 class="counter__number counter-value" data-count="10458">
-            10458
-          </h1>
-          <p class="'counter__info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-            atque sed.
-          </p>
+    <div id="counter" class="container-xl py-4">
+      <div class="counter__list row g-4">
+        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+          <div class="counter-block p-4">
+            <h5 class="fs-6">Happy Customers</h5>
+            <h1 class="counter__number counter-value" data-count="10458">
+              10458
+            </h1>
+            <p class="'counter__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-        <div class="counter-block p-4">
-          <h5 class="fs-6">Winning Awards</h5>
-          <h1 class="counter__number counter-value" data-count="890">
-            890
-          </h1>
-          <p class="'counter__info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-            atque sed.
-          </p>
+        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+          <div class="counter-block p-4">
+            <h5 class="fs-6">Winning Awards</h5>
+            <h1 class="counter__number counter-value" data-count="890">
+              890
+            </h1>
+            <p class="'counter__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-        <div class="counter-block p-4">
-          <h5 class="fs-6">Completed Projects</h5>
-          <h1 class="counter__number counter-value" data-count="5345">
-            5345
-          </h1>
-          <p class="'counter__info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-            atque sed.
-          </p>
+        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+          <div class="counter-block p-4">
+            <h5 class="fs-6">Completed Projects</h5>
+            <h1 class="counter__number counter-value" data-count="5345">
+              5345
+            </h1>
+            <p class="'counter__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              atque sed.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -234,7 +236,7 @@
       </div>
       <div class="explore__list row justify-content-sm-center g-4 pt-5">
         <div class="explore__item col-lg-4 col-md-6 col-xs-12">
-          <div class="item__block">
+          <div class="item__block up__Y">
             <div class="explore__img">
               <img class="img-fluid" src="./asset/img/b1.jpg" alt="" />
               <span>26 Jan, 2020</span>
@@ -248,13 +250,15 @@
                 Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
                 molestiae ullam ipsam quas unde earum...
               </p>
-              <a class="text-decoration-none link-danger fw-bol fs-6" href="">Know More</a>
-              <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              <div class="pt-3">
+                <a class="text-decoration-none link-danger fw-bol fs-6 " href="">Know More</a>
+                <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              </div>
             </div>
           </div>
         </div>
         <div class="explore__item col-lg-4 col-md-6 col-xs-12">
-          <div class="item__block">
+          <div class="item__block up__Y">
             <div class="explore__img">
               <img class="img-fluid" src="./asset/img/b7.jpg" alt="" />
               <span>15 Apr, 2020</span>
@@ -268,13 +272,15 @@
                 Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
                 molestiae ullam ipsam quas unde earum...
               </p>
-              <a class="text-decoration-none link-danger fw-normal fs-6" href="">Know More</a>
-              <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              <div class="pt-3">
+                <a class="text-decoration-none link-danger fw-normal fs-6" href="">Know More</a>
+                <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              </div>
             </div>
           </div>
         </div>
         <div class="explore__item col-lg-4 col-md-6 col-xs-12">
-          <div class="item__block">
+          <div class="item__block up__Y">
             <div class="explore__img">
               <img class="img-fluid" src="./asset/img/b3.jpg" alt="" />
               <span>25 Jun, 2020</span>
@@ -288,8 +294,10 @@
                 Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
                 molestiae ullam ipsam quas unde earum...
               </p>
-              <a class="text-decoration-none link-danger fw-normal fs-6" href="">Know More</a>
-              <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              <div class="pt-3">
+                <a class="text-decoration-none link-danger fw-normal fs-6" href="">Know More</a>
+                <span class="fa fa-arrow-right text-danger explore__arrow" aria-hidden="true"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -309,7 +317,7 @@
       </div>
       <div class="section__content pt-5 row">
         <div class="faqs__img col-md-5 col-xs-12">
-          <img class="img-fluid" src="./asset/img/women.jpg" alt="" />
+          <img class="img-fluid up__Y" src="./asset/img/women.jpg" alt="" />
         </div>
         <div class="accordion__container col-md-7 col-xs-12 ps-md-5 pt-xs-4 pt-sm-4 pt-md-0">
           <div class="accordion" id="accordionExample">
@@ -475,7 +483,7 @@
                 </button>
               </div>
               <div class="col-md-6 col-xs-12 mt-md-0 pt-5">
-                <img class="img-fluid rounded" src="./asset/img/b4.jpg" alt="" />
+                <img class="img-fluid rounded up__Y" src="./asset/img/b4.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -497,7 +505,7 @@
                 </button>
               </div>
               <div class="col-md-6 col-xs-12 mt-md-0 order-1 pt-5">
-                <img class="img-fluid rounded" src="./asset/img/b5.jpg" alt="" />
+                <img class="img-fluid rounded up__Y" src="./asset/img/b5.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -519,7 +527,7 @@
                 </button>
               </div>
               <div class="col-md-6 col-xs-12 mt-md-0 pt-5">
-                <img class="img-fluid rounded" src="./asset/img/b6.jpg" alt="" />
+                <img class="img-fluid rounded up__Y" src="./asset/img/b6.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -662,7 +670,7 @@
       </div>
       <div class="footer__bottom row">
         <div class="col-12 col-lg-6 text-center text-lg-start">
-          <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a></p>
+          <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com" target="_blank">W3Layouts</a></p>
         </div>
         <div class="col-12 col-lg-6 text-center text-lg-end mt-3 mt-lg-0">
           <i class="fa fa-facebook"></i>
