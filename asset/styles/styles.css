@@ -51,7 +51,9 @@ body {
 .fa-navicon:before {
   content: "\f0c9";
 }
-
+.dropdown-menu.show {
+  left: -50%;
+}
 .dropdown-menu.show::before {
   content: "";
   position: absolute;
@@ -61,6 +63,7 @@ body {
   border-top: 1px solid #00000026;
   border-left: 1px solid #00000026;
   top: -8px;
+  left: 50%;
   transform: rotateZ(45deg);
   z-index: -1;
 }
@@ -502,6 +505,10 @@ body {
   #header .dropdown-menu {
     width: 100%;
     text-align: center;
+  }
+  .dropdown-menu.show::before {
+    top: 40px;
+    z-index: 1;
   }
 }
 @media only screen and (max-width: 768px) {
