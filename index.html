@@ -18,16 +18,15 @@
   <link rel="stylesheet" href="./asset/js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./asset/styles/styles.css" />
 </head>
+
 <body>
   <div id="header" class="fixed-top">
-    <div class="container-lg">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><span class="fa fa-handshake-o"></span>Masterwork</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="container-lg h-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white h-100">
+        <div class="container-fluid align-items-center">
+          <div>
+            <a class="navbar-brand" href="#"><span class="fa fa-handshake-o"></span>Masterwork</a>
+          </div>
           <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
             <div class="navbar-nav align-items-center">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -52,12 +51,14 @@
                 </ul>
               </li>
               <a class="nav-link" href="#">Contact</a>
-              <a class="nav-link ml-lg-3 ml-0 mt-lg-0 mt-3" href="#">
-                <button class="btn btn-outline-danger theme-button custom-btn">
-                  Schedule a Demo
-                </button>
-              </a>
             </div>
+          </div>
+          <div>
+            <span class="nav-link ml-lg-3 ml-0 mt-lg-0 mt-3" href="#">
+              <button class="btn btn-outline-danger theme-button custom-btn">
+                Schedule a Demo
+              </button>
+            </span>
           </div>
         </div>
       </nav>
@@ -164,44 +165,44 @@
     </div>
   </div>
   <div id="counter" class="container-xl py-4">
-      <div class="counter__list row g-4">
-        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-          <div class="counter-block p-4">
-            <h5 class="fs-6">Happy Customers</h5>
-            <h1 class="counter__number counter-value" data-count="10458">
-              10458
-            </h1>
-            <p class="'counter__info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-              atque sed.
-            </p>
-          </div>
-        </div>
-        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-          <div class="counter-block p-4">
-            <h5 class="fs-6">Winning Awards</h5>
-            <h1 class="counter__number counter-value" data-count="890">
-              890
-            </h1>
-            <p class="'counter__info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-              atque sed.
-            </p>
-          </div>
-        </div>
-        <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
-          <div class="counter-block p-4">
-            <h5 class="fs-6">Completed Projects</h5>
-            <h1 class="counter__number counter-value" data-count="5345">
-              5345
-            </h1>
-            <p class="'counter__info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-              atque sed.
-            </p>
-          </div>
+    <div class="counter__list row g-4">
+      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+        <div class="counter-block p-4">
+          <h5 class="fs-6">Happy Customers</h5>
+          <h1 class="counter__number counter-value" data-count="10458">
+            10458
+          </h1>
+          <p class="'counter__info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            atque sed.
+          </p>
         </div>
       </div>
+      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+        <div class="counter-block p-4">
+          <h5 class="fs-6">Winning Awards</h5>
+          <h1 class="counter__number counter-value" data-count="890">
+            890
+          </h1>
+          <p class="'counter__info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            atque sed.
+          </p>
+        </div>
+      </div>
+      <div class="counter__item col-lg-4 col-sm-6 col-xs-12">
+        <div class="counter-block p-4">
+          <h5 class="fs-6">Completed Projects</h5>
+          <h1 class="counter__number counter-value" data-count="5345">
+            5345
+          </h1>
+          <p class="'counter__info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            atque sed.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="section__perform" class="py-5">
     <div class="container-xl py-4">
@@ -614,7 +615,7 @@
   </div>
   <div id="footer" class="py-5">
     <div class="container-xl">
-      <div class="row justify-content-between">
+      <div class="footer__top row justify-content-between">
         <div class="footer__left col-lg-6 col-md-12 px-4 row">
           <div class="footer__item col-12 col-sm-4">
             <h3>Company</h3>
@@ -651,19 +652,19 @@
           <h3>Newsletter</h3>
           <div class="footer__form">
             <h4>Get latest updates and offers.</h4>
-            <div class="row">
-              <input class="col-sm-10 col-12" type="email" name="email" placeholder="Email Address" required>
+            <div class="row ">
+              <input class="col-sm-9 ms-lg-2 col-12" type="email" name="email" placeholder="Email Address" required>
               <button class="btn btn-danger col-sm-2 col-12 mt-3 mt-sm-0">Go</button>
             </div>
             <p>Sign up for our latest news & articles. We won't give you spam mails.</p>
           </div>
         </div>
       </div>
-      <div class="footer__end row">
-        <div class="col-6">
-          <p>© 2020 Masterwork. All rights reserved | Designed by W3Layouts</p>
+      <div class="footer__bottom row">
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a></p>
         </div>
-        <div class="col-6 text-end ">
+        <div class="col-12 col-lg-6 text-center text-lg-end mt-3 mt-lg-0">
           <i class="fa fa-facebook"></i>
           <i class="fa fa-instagram"></i>
           <i class="fa fa-twitter"></i>
@@ -691,6 +692,8 @@
   <!-- Slick slider -->
   <script src="./asset/js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src="./asset/js/OwlResponsive.js"></script>
+  <script src="./asset/js/index.js"></script>
 
 </body>
+
 </html>

@@ -12,11 +12,34 @@ body {
 }
 #header {
   background-color: #fff;
-  height: 90px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 9px 0px;
-}
-#header .navbar {
   height: 90px;
+  transition: all 0.6s ease;
+}
+#header.nav-fixed {
+  padding: 0px;
+  height: 70px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+#header .nav-link {
+  position: relative;
+}
+#header .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #dc4f72;
+  bottom: 6px;
+  left: 8px;
+  transition: all 0.5s ease;
+}
+#header a.nav-link:hover {
+  color: #dc4f72;
+}
+#header a.nav-link:hover::before {
+  width: 15px;
 }
 #header .navbar-brand {
   font-size: 26px;
@@ -36,12 +59,12 @@ body {
   color: rgb(220, 79, 114);
 }
 #header .custom-btn.btn-outline-danger {
+  padding: 16px 30px;
   margin-left: 20px;
 }
 .theme-button {
   transition: 0.3s ease-out;
   display: inline-block;
-  line-height: 52px;
   font-weight: 700;
   font-size: 14px;
   margin: 0px;
@@ -368,6 +391,28 @@ body {
 }
 .footer__form p {
   margin-top: 15px;
+}
+#footer .footer__bottom {
+  padding-top: 20px;
+  position: relative;
+  margin-top: 48px;
+}
+#footer .footer__bottom::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #5a5a5a;
+  opacity: 0.2;
+}
+.footer__bottom a {
+  text-decoration: none;
+  color: #2c3038;
+}
+.footer__bottom i {
+  padding: 10px 13px;
 }
 @media (min-width: 1400px) {
   .container-xl,
